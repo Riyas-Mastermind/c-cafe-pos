@@ -144,6 +144,8 @@ int main()
             default:
                 printf("Invalid choice, please select between 1 and 8\n\n");
         }
+        total_cost += subtotal[8];
+        printf("Total cost = Rs. %g\n",total_cost);
 
     }while(choice != 0);
 

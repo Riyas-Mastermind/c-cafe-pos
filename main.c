@@ -133,9 +133,9 @@ int main()
                 printf("You Selected Exit/Checkout \n");
                 
                 break;
-
+            default:
+                printf("Invalid choice, please select between 1 and 8\n\n");
                 
-            
 
         }
 

@@ -139,7 +139,7 @@ int main()
             case 0:
                 printf("\n");
                 printf("You Selected Exit/Checkout \n");
-                
+                // i need do list of order and total with gst part need to do.....
                 break;
             default:
                 printf("Invalid choice, please select between 1 and 8\n\n");

@@ -143,8 +143,7 @@ int main()
             default:
                 printf("Invalid choice, please select between 1 and 8\n\n");
         }
-
-
+        
     }while(choice != 0);
 
     return 0;

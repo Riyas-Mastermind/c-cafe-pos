@@ -140,12 +140,12 @@ int main()
                 printf("\n");
                 printf("You Selected Exit/Checkout \n");
                 // i need do list of order and total with gst part need to do.....
+
                 break;
             default:
                 printf("Invalid choice, please select between 1 and 8\n\n");
         }
-        total_cost += subtotal[8];
-        printf("Total cost = Rs. %g\n",total_cost);
+
 
     }while(choice != 0);
 

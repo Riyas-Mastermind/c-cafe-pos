@@ -154,48 +154,116 @@ int main()
                 if(total_cost == 0) 
                 {
                     printf("----------------- Here is your selected order list :) -----------------\n\n ");
-                    printf("Sl.No.               Name of Items            Qty         Rate        total\n");
-                        if(subtotal[0] != 0)
+                    printf("Sl.No.             Name of Items                        Qty        Rate      total\n");
+                    if(subtotal[0] != 0)
                         {
-                            printf(" 1.                   Hot Coffee           %g         Rs. %.2f        %g \n", quantity[0], price[0], subtotal[0]);
+                            printf(" 1.          Hot Coffee                                %g        Rs. %.2f/-      Rs. %g/- \n", quantity[0], price[0], subtotal[0]);
                         }
                         
-                        if(subtotal[1] != 0)
+                    if(subtotal[1] != 0)
                         {
-                            printf(" 2.                   Special Coffee           %g         Rs. %.2f        %g \n", quantity[1], price[1], subtotal[1]);
+                            printf(" 2.          Special Coffee                            %g        Rs. %.2f/-      Rs. %g/- \n", quantity[1], price[1], subtotal[1]);
                         }
                         
-                        if(subtotal[2] != 0)
+                    if(subtotal[2] != 0)
                         {
-                            printf(" 3.                  Cold Cream Coffee           %g         Rs. %.2f        %g \n", quantity[2], price[2], subtotal[2]);
+                            printf(" 3.          Cold Cream Coffee                         %g        Rs. %.2f/-      Rs. %g/- \n", quantity[2], price[2], subtotal[2]);
                         }
 
-                        if(subtotal[3] != 0)
+                    if(subtotal[3] != 0)
                         {
-                            printf(" 4.          Cold Cream Coffee with Ice Cream           %g         Rs. %.2f        %g \n", quantity[3], price[3], subtotal[3]);
+                            printf(" 4.          Cold Cream Coffee with Ice Cream          %g        Rs. %.2f/-      Rs. %g/- \n", quantity[3], price[3], subtotal[3]);
                         }
                         
-                        if(subtotal[4] != 0)
+                    if(subtotal[4] != 0)
                         {
-                            printf(" 5.             Roohafza Milk Shake           %g         Rs. %.2f        %g \n", quantity[4], price[4], subtotal[4]);
+                            printf(" 5.          Roohafza Milk Shake                       %g        Rs. %.2f/-      Rs. %g/- \n", quantity[4], price[4], subtotal[4]);
                         }
 
-                        if(subtotal[5] != 0)
+                    if(subtotal[5] != 0)
                         {
-                            printf(" 6.          Strawberry Shake with Ice Cream           %g         Rs. %.2f        %g \n", quantity[5], price[5], subtotal[5]);
+                            printf(" 6.          Strawberry Shake with Ice Cream           %g        Rs. %.2f/-      Rs. %g/- \n", quantity[5], price[5], subtotal[5]);
                         }
 
-                        if(subtotal[6] != 0)
+                    if(subtotal[6] != 0)
                         {
-                            printf(" 7.         Badam Shake with Ice Cream           %g         Rs. %.2f        %g \n", quantity[6], price[6], subtotal[6]);
+                            printf(" 7.          Badam Shake with Ice Cream                %g        Rs. %.2f/-      Rs. %g/- \n", quantity[6], price[6], subtotal[6]);
                         }
 
-                        if(subtotal[7] != 0)
+                    if(subtotal[7] != 0)
                         {
-                            printf(" 8.           Chocolate Milk           %g         Rs. %.2f        %g \n", quantity[7], price[7], subtotal[7]);
+                            printf(" 8.          Chocolate Milk                            %g        Rs. %.2f/-      Rs. %g/- \n", quantity[7], price[7], subtotal[7]);
                         }
+                    //printf("--------------------------------------------------------------------------------------------------------------------------");         
+                    printf("\n\n");
+                }
+                else
+                {
+                    printf("You have not selected any items from the menu :(\n\n");
+                    printf("---------------- Thank You :) ----------------\n\n");
+                    break;
+                }
+                
+                int temp;
+                printf("Please review your order above and enter 0 or 1 to proceed with payment -> ");
+                if(scanf("%d", &temp)!=1)
+                {
+                    printf("Error: Please Enter only integer value.\n");
+                    return -2;
+                }
+                printf("\n\n");
+
+                if(temp == 1)
+                {
+                    printf("----------------- Here is your selected order list :) -----------------\n\n ");
+                    printf("Sl.No.             Name of Items                        Qty        Rate      total\n");
+                    if(subtotal[0] != 0)
+                        {
+                            printf(" 1.          Hot Coffee                                %g        Rs. %.2f/-      Rs. %g/- \n", quantity[0], price[0], subtotal[0]);
+                        }
+                        
+                    if(subtotal[1] != 0)
+                        {
+                            printf(" 2.          Special Coffee                            %g        Rs. %.2f/-      Rs. %g/- \n", quantity[1], price[1], subtotal[1]);
+                        }
+                        
+                    if(subtotal[2] != 0)
+                        {
+                            printf(" 3.          Cold Cream Coffee                         %g        Rs. %.2f/-      Rs. %g/- \n", quantity[2], price[2], subtotal[2]);
+                        }
+
+                    if(subtotal[3] != 0)
+                        {
+                            printf(" 4.          Cold Cream Coffee with Ice Cream          %g        Rs. %.2f/-      Rs. %g/- \n", quantity[3], price[3], subtotal[3]);
+                        }
+                        
+                    if(subtotal[4] != 0)
+                        {
+                            printf(" 5.          Roohafza Milk Shake                       %g        Rs. %.2f/-      Rs. %g/- \n", quantity[4], price[4], subtotal[4]);
+                        }
+
+                    if(subtotal[5] != 0)
+                        {
+                            printf(" 6.          Strawberry Shake with Ice Cream           %g        Rs. %.2f/-      Rs. %g/- \n", quantity[5], price[5], subtotal[5]);
+                        }
+
+                    if(subtotal[6] != 0)
+                        {
+                            printf(" 7.          Badam Shake with Ice Cream                %g        Rs. %.2f/-      Rs. %g/- \n", quantity[6], price[6], subtotal[6]);
+                        }
+
+                    if(subtotal[7] != 0)
+                        {
+                            printf(" 8.          Chocolate Milk                            %g        Rs. %.2f/-      Rs. %g/- \n", quantity[7], price[7], subtotal[7]);
+                        }
+                    printf("--------------------------------------------------------------------------------------------------------------------------\n\n");         
+                    total_cost = ((subtotal[0] + subtotal[1] + subtotal[2] + subtotal[3] + subtotal[4] + subtotal[5] + subtotal[6] + subtotal[7]) * 18) / 100;
+                    float total_price = 0;
+                    total_price = (price[0] + price[1] + price[2] + price[3] + price[4] + price[5] + price[6] + price[7]);
+                    printf("                    Total Cost of Price                      Rs. %.2f/-      Rs. %.2f/-\n\n",total_price, total_cost);
                 }
 
+                break;
 
                 /*for(int i = 0; i <= 7; i++)
                 {
@@ -208,12 +276,7 @@ int main()
                     }
                 }*/
 
-                else
-                {
-                    printf("You have not selected any items from the menu :(\n\n");
-                    printf("---------------- Thank You :) ----------------\n\n");
-                }
-                break;
+                
 
             default:
                 printf("Invalid choice, please select between 1 and 8\n\n");
@@ -222,6 +285,8 @@ int main()
 
 
     }while(choice != 0);
+
+
 
     return 0;
 }

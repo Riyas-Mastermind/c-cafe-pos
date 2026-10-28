@@ -1,10 +1,23 @@
+/*
+
+
+Name: M Mohammed Riyaz
+Start Date: 26/10/2026
+
+A lightweight, terminal-based & Ordering System written in C. 
+
+This project demonstrates core C programming concepts, including modular software design, 
+interactive terminal interfaces, running total calculations, and robust input validation.
+*/
+
+
 #include <stdio.h>
 
 int main()
 {
     float total_cost = 0.0;
     int choice;
-    float quantity[8];
+    float quantity[8];  
     float subtotal[8] = {0.0};
     float price[8];
 
@@ -42,6 +55,14 @@ int main()
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
+
+                /*
+                scanf to read a single piece of data (like %f or %d), it can return three possible values:
+                1: It successfully read and stored one item .
+                0: It failed to match what you asked for ex: the user typed letters instead of a number
+                -1 (EOF): It hit the end of the input stream or an error occurred like a closed terminal window
+                */
+
                 subtotal[0] = quantity[0] * price[0];
                 printf("\nSubtotal for Hot Coffee -> Rs. %g/-\n\n",subtotal[0]);
                 break;

@@ -4,9 +4,9 @@ int main()
 {
     float total_cost = 0.0;
     int choice;
-    float quantity[8];
-    float subtotal[8];
-    float price[8];
+    float quantity[8] = 0.0;
+    float subtotal[8] = 0.0;
+    float price[8] = 0.0;
 
     do
     {

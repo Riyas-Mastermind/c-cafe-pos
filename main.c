@@ -11,7 +11,7 @@ int main()
     do
     {
         printf("\n");
-        printf("-----------------Welcome to C-Cafe-Pos------------------\n\n");
+        printf("-------------------Welcome to C-Cafe-------------------\n\n");
         printf("Sl.No.               Name of Items                     Rate\n");
         printf(" 1.                   Hot Coffee                    Rs. 25.00\n");
         printf(" 2.                  Special Coffee                 Rs. 40.00\n");

@@ -147,17 +147,14 @@ int main()
             case 0:
                 printf("\n");
                 printf("Order Summary for selected items.\n\n");
-                printf("----------------- Here is your selected order list :) -----------------\n\n ");
-                printf("Sl.No.               Name of Items            Qty         Rate        total\n");
-                
                 
                 if(total_cost == 0) 
                 {
                     printf("----------------- Here is your selected order list :) -----------------\n\n ");
-                    printf("Sl.No.             Name of Items                        Qty        Rate      total\n");
+                    printf("Sl.No.             Name of Items                     Qty        Rate           total\n");
                     if(subtotal[0] != 0)
                         {
-                            printf(" 1.          Hot Coffee                                %g        Rs. %.2f/-      Rs. %g/- \n", quantity[0], price[0], subtotal[0]);
+                            printf(" 1.          Hot Coffee                                %g        Rs. %.2f/-       Rs. %g/- \n", quantity[0], price[0], subtotal[0]);
                         }
                         
                     if(subtotal[1] != 0)
@@ -215,11 +212,11 @@ int main()
 
                 if(temp == 1)
                 {
-                    printf("----------------- Here is your selected order list :) -----------------\n\n ");
-                    printf("Sl.No.             Name of Items                        Qty        Rate      total\n");
+                    printf("----------------- Here is your confirmed order list! :) -----------------\n\n ");
+                    printf("Sl.No.             Name of Items                     Qty        Rate           total\n");
                     if(subtotal[0] != 0)
                         {
-                            printf(" 1.          Hot Coffee                                %g        Rs. %.2f/-      Rs. %g/- \n", quantity[0], price[0], subtotal[0]);
+                            printf(" 1.          Hot Coffee                                %g        Rs. %.2f/-       Rs. %g/- \n", quantity[0], price[0], subtotal[0]);
                         }
                         
                     if(subtotal[1] != 0)
@@ -257,11 +254,27 @@ int main()
                             printf(" 8.          Chocolate Milk                            %g        Rs. %.2f/-      Rs. %g/- \n", quantity[7], price[7], subtotal[7]);
                         }
                     printf("--------------------------------------------------------------------------------------------------------------------------\n\n");         
-                    total_cost = ((subtotal[0] + subtotal[1] + subtotal[2] + subtotal[3] + subtotal[4] + subtotal[5] + subtotal[6] + subtotal[7]) * 18) / 100;
+                    float total_subtotal = 0;
+                    total_subtotal = (subtotal[0] + subtotal[1] + subtotal[2] + subtotal[3] + subtotal[4] + subtotal[5] + subtotal[6] + subtotal[7]);
+                    //total_cost = ((subtotal[0] + subtotal[1] + subtotal[2] + subtotal[3] + subtotal[4] + subtotal[5] + subtotal[6] + subtotal[7]) * 18) / 100;
                     float total_price = 0;
                     total_price = (price[0] + price[1] + price[2] + price[3] + price[4] + price[5] + price[6] + price[7]);
-                    printf("                    Total Cost of Price                      Rs. %.2f/-      Rs. %.2f/-\n\n",total_price, total_cost);
+                    /* CGST Amount = ₹1,000 × (9 / 100) = ₹90
+                       SGST Amount = ₹1,000 × (9 / 100) = ₹90*/
+                    float CGST = 0;
+                    float SGST = 0;
+                    CGST = total_subtotal * (9 / 100);
+                    SGST = total_subtotal * (9 / 100);
+                    total_cost = (total_subtotal + CGST + SGST);
+                    printf("                 Subtotal Amount          ->            Rs. %.2f/-      Rs. %.2f/-\n\n",total_price, total_subtotal);
+                    printf("                 CGST(%%9) Amount         ->                            Rs. %.2f/-\n\n",CGST);
+                    printf("                 SGST(%%9) Amount         ->                            Rs. %.2f/-\n\n",SGST);
+                    printf("               Final Invoice Amount       ->                            Rs. %.2f/-\n\n",total_subtotal);
                 }
+                printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                printf("                  Thank you for visiting C-Cafe! :)                   \n");
+                printf("                    Please come again. Have a nice day!                \n");
+                printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
                 break;
 
@@ -276,17 +289,12 @@ int main()
                     }
                 }*/
 
-                
-
             default:
                 printf("Invalid choice, please select between 1 and 8\n\n");
                 break;
+
         }
 
-
     }while(choice != 0);
-
-
-
     return 0;
 }

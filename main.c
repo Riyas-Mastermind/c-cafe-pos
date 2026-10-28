@@ -266,7 +266,7 @@ int main()
                     cgst = total_subtotal * (9.0 / 100.0);
                     sgst = total_subtotal * (9.0 / 100.0);
                     total_cost = (total_subtotal + cgst + sgst);
-                    printf("                 Subtotal Amount          ->                   Rs. %.2f/-        Rs. %.2f/-\n\n",total_price, total_subtotal);
+                    printf("                 Subtotal Amount          ->                     Rs. %.2f/-     Rs. %.2f/-\n\n",total_price, total_subtotal);
                     printf("                 CGST(%%9) Amount          ->                                      Rs. %.2f/-\n\n",cgst);
                     printf("                 SGST(%%9) Amount          ->                                      Rs. %.2f/-\n\n",sgst);
                     printf("               Final Invoice Amount       ->                                      Rs. %.2f/-\n\n",total_cost);

@@ -21,7 +21,7 @@ int main()
         printf(" 6.        Strawberry Shake with Ice Cream          Rs. 115.00\n");
         printf(" 7.           Badam Shake with Ice Cream            Rs. 120.00\n");
         printf(" 8.                 Chocolate Milk                  Rs. 95.00\n");
-        printf(" 0.        --------- Exit/Checkout --------- \n\n");
+        printf(" 0.   --------- Checkout Order / Exit ---------     \n\n");
 
         printf("Please Select your order from this above list -> ");
 

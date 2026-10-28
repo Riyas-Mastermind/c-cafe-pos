@@ -146,16 +146,24 @@ int main()
 
             case 0:
                 printf("\n");
-                printf("You Selected Exit/Checkout \n\n");
+                printf("Order Summary for selected items.\n\n");
                 
-                if(subtotal[8] == true)
+                if(subtotal[8] != 0)
                 {
                     printf("----------------- Here is your selected order list :) -----------------\n\n ");
-                    printf("Sl.No.                     Name of Items                      Rate\n");
+                    printf("Sl.No.               Name of Items            Qty         Rate        total\n");
+                    if(subtotal[0] != 0)
+                    {
+                        printf(" 1.                   Hot Coffee           %g         Rs. %.2f        %g \n", quantity, price[0], subtotal[0]);
+                    }
+                    else if(subtotal[1] != 0)
+                    {
+                        printf(" 2.                   super Coffee           %g         Rs. %.2f        %g \n", quantity, price[1], subtotal[1]);
+                    }
                 }
                 else
                 {
-                    printf("You have not selected any items from the menu.\n\n");
+                    printf("You have not selected any items from the menu :(\n\n");
                     printf("---------------- Thank You :) ----------------\n\n");
                 }
                 break;

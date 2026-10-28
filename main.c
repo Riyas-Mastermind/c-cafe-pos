@@ -43,7 +43,7 @@ int main()
                     return -2;
                 }
                 subtotal[0] = (float)quantity * price[0];
-                printf("\nSubtotal for Hot Coffee -> Rs. %g/-\n\n",subtotal[0]);
+                printf("\nSubtotal for Hot Coffee -> Rs. %f/-\n\n",subtotal[0]);
                 break;
             case 2:
                 price[1] = 40.00;

@@ -28,14 +28,14 @@ int main()
         if(scanf("%d", &choice)!=1)
         {
             printf("Error: Please Enter the Correct number from menu list.\n");
-            continue;
+            return -1;
         }
         switch(choice)
         {
             case 1:
                 price[0] = 25.00;
                 printf("\n");
-                printf("You Selected Hot Coffee -> Rs. %g/-\n\n", price[0]);
+                printf("You Selected Hot Coffee -> Rs. %.2f/-\n\n", price[0]);
                 printf("Enter the Quantity of Hot Coffee -> ");
                 if(scanf("%f", &quantity)!=1)
                 {
@@ -48,7 +48,7 @@ int main()
             case 2:
                 price[1] = 40.00;
                 printf("\n");
-                printf("You Selected Special Coffee -> Rs. %g/-\n\n", price[1]);
+                printf("You Selected Special Coffee -> Rs. %.2f/-\n\n", price[1]);
                 printf("Enter the Quantity of Special Coffee -> ");
                 if(scanf("%f", &quantity)!=1)
                 {
@@ -61,7 +61,7 @@ int main()
             case 3:
                 price[2] = 80.00;
                 printf("\n");
-                printf("You Selected Cold Cream Coffee -> Rs. %g/-\n\n", price[2]);
+                printf("You Selected Cold Cream Coffee -> Rs. %.2f/-\n\n", price[2]);
                 printf("Enter the Quantity of Special Coffee -> ");
                 if(scanf("%f", &quantity)!=1)
                 {
@@ -74,7 +74,7 @@ int main()
             case 4:
                 price[3] = 105.00;
                 printf("\n");
-                printf("You Selected Cold Cream Coffee with Ice Cream -> Rs. %g/-\n\n", price[3]);
+                printf("You Selected Cold Cream Coffee with Ice Cream -> Rs. %.2f/-\n\n", price[3]);
                 printf("Enter the Quantity of Special Coffee -> ");
                 if(scanf("%f", &quantity)!=1)
                 {
@@ -87,7 +87,7 @@ int main()
             case 5:
                 price[4] = 85.00;
                 printf("\n");
-                printf("You Selected Roohafza Milk Shake -> Rs. %g/-\n\n", price[4]);
+                printf("You Selected Roohafza Milk Shake -> Rs. %.2f/-\n\n", price[4]);
                 printf("Enter the Quantity of Special Coffee -> ");
                 if(scanf("%f", &quantity)!=1)
                 {
@@ -100,7 +100,7 @@ int main()
             case 6:
                 price[5] = 115.00;
                 printf("\n");
-                printf("You Selected Strawberry Shake with Ice Cream -> Rs. %g/-\n\n", price[5]);
+                printf("You Selected Strawberry Shake with Ice Cream -> Rs. %.2f/-\n\n", price[5]);
                 printf("Enter the Quantity of Special Coffee -> ");
                 if(scanf("%f", &quantity)!=1)
                 {
@@ -113,7 +113,7 @@ int main()
             case 7:
                 price[6] = 120.00;
                 printf("\n");
-                printf("You Selected Badam Shake with Ice Cream -> Rs. %g/-\n\n", price[6]);
+                printf("You Selected Badam Shake with Ice Cream -> Rs. %.2f/-\n\n", price[6]);
                 printf("Enter the Quantity of Special Coffee -> ");
                 if(scanf("%f", &quantity)!=1)
                 {
@@ -126,7 +126,7 @@ int main()
             case 8:
                 price[7] = 95.00;
                 printf("\n");
-                printf("You Selected Chocolate Milk -> Rs. %g/-\n\n", price[7]);
+                printf("You Selected Chocolate Milk -> Rs. %.2f/-\n\n", price[7]);
                 printf("Enter the Quantity of Special Coffee ->  ");
                 if(scanf("%f", &quantity)!=1)
                 {

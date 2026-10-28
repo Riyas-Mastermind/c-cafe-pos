@@ -4,7 +4,7 @@ int main()
 {
     float total_cost = 0.0;
     int choice;
-    int quantity;
+    float quantity;
     float subtotal[8];
     float price[8];
 
@@ -28,7 +28,7 @@ int main()
         if(scanf("%d", &choice)!=1)
         {
             printf("Error: Please Enter the Correct number from menu list.\n");
-            return -1;
+            continue;
         }
         switch(choice)
         {
@@ -43,7 +43,7 @@ int main()
                     return -2;
                 }
                 subtotal[0] = (float)quantity * price[0];
-                printf("\nSubtotal for Hot Coffee -> Rs. %f/-\n\n",subtotal[0]);
+                printf("\nSubtotal for Hot Coffee -> Rs. %g/-\n\n",subtotal[0]);
                 break;
             case 2:
                 price[1] = 40.00;

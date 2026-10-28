@@ -1,4 +1,4 @@
-# C-Cafe POS System
+# C-Cafe System
 
 A lightweight, terminal-based system written in C designed to manage cafe orders, validate user inputs, calculate taxes, and generate itemized receipts.
 

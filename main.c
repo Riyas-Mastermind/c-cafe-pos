@@ -154,12 +154,13 @@ int main()
                     printf("Sl.No.               Name of Items            Qty         Rate        total\n");
                     if(subtotal[0] != 0)
                     {
-                        printf(" 1.                   Hot Coffee           %g         Rs. %.2f        %g \n", quantity, price[0], subtotal[0]);
+                        printf(" 1.                   Hot Coffee           %g         Rs. %.2f        %g \n", quantity[0], price[0], subtotal[0]);
+                        if(subtotal[1] != 0)
+                        {
+                            printf(" 2.                   super Coffee           %g         Rs. %.2f        %g \n", quantity[1], price[1], subtotal[1]);
+                        }
                     }
-                    else if(subtotal[1] != 0)
-                    {
-                        printf(" 2.                   super Coffee           %g         Rs. %.2f        %g \n", quantity, price[1], subtotal[1]);
-                    }
+
                 }
                 else
                 {

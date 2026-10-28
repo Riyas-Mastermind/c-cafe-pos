@@ -45,6 +45,7 @@ int main()
                 subtotal[0] = quantity * price[0];
                 printf("\nSubtotal for Hot Coffee -> Rs. %g/-\n\n",subtotal[0]);
                 break;
+                
             case 2:
                 price[1] = 40.00;
                 printf("\n");
@@ -58,6 +59,7 @@ int main()
                 subtotal[1] = quantity * price[1];
                 printf("\nSubtotal for Special Coffee -> Rs. %g/-\n\n",subtotal[1]);
                 break;
+
             case 3:
                 price[2] = 80.00;
                 printf("\n");
@@ -71,6 +73,7 @@ int main()
                 subtotal[2] = quantity * price[2];
                 printf("\nSubtotal for Cold Cream Coffee -> Rs. %g/-\n\n",subtotal[2]);
                 break;
+
             case 4:
                 price[3] = 105.00;
                 printf("\n");
@@ -84,6 +87,7 @@ int main()
                 subtotal[3] = quantity * price[3];
                 printf("\nSubtotal for Cold Cream Coffee with Ice Cream -> Rs. %g/-\n\n",subtotal[3]);
                 break;
+
             case 5:
                 price[4] = 85.00;
                 printf("\n");
@@ -97,6 +101,7 @@ int main()
                 subtotal[4] = quantity * price[4];
                 printf("\nSubtotal for Roohafza Milk Shake -> Rs. %g/-\n\n",subtotal[4]);
                 break;
+
             case 6:
                 price[5] = 115.00;
                 printf("\n");
@@ -110,6 +115,7 @@ int main()
                 subtotal[5] = quantity * price[5];
                 printf("\nSubtotal for Strawberry Shake with Ice Cream -> Rs. %g/-\n\n",subtotal[5]);
                 break;
+
             case 7:
                 price[6] = 120.00;
                 printf("\n");
@@ -123,6 +129,7 @@ int main()
                 subtotal[6] = quantity * price[6];
                 printf("\nSubtotal for Badam Shake with Ice Cream -> Rs. %g/-\n\n",subtotal[6]);
                 break;
+
             case 8:
                 price[7] = 95.00;
                 printf("\n");
@@ -136,12 +143,23 @@ int main()
                 subtotal[7] = quantity * price[7];
                 printf("\nSubtotal for Chocolate Milk -> Rs. %g/-\n\n",subtotal[7]);
                 break;
+
             case 0:
                 printf("\n");
-                printf("You Selected Exit/Checkout \n");
-                // i need do list of order and total with gst part need to do.....
-
+                printf("You Selected Exit/Checkout \n\n");
+                
+                if(subtotal[8] == true)
+                {
+                    printf("----------------- Here is your selected order list :) -----------------\n\n ");
+                    printf("Sl.No.                     Name of Items                      Rate\n");
+                }
+                else
+                {
+                    printf("You have not selected any items from the menu.\n\n");
+                    printf("---------------- Thank You :) ----------------\n\n");
+                }
                 break;
+
             default:
                 printf("Invalid choice, please select between 1 and 8\n\n");
         }

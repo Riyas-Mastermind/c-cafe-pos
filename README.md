@@ -21,9 +21,9 @@ A lightweight, terminal-based system written in C designed to manage cafe orders
    ```bash
    gcc main.c -o main
    ```
-3. Run
+3. Run:
    ```bash
    ./main
    ```
-## Author
+### Author
 -> M Mohammed Riyaz

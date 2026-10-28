@@ -261,15 +261,15 @@ int main()
                     total_price = (price[0] + price[1] + price[2] + price[3] + price[4] + price[5] + price[6] + price[7]);
                     /* CGST Amount = ₹1,000 × (9 / 100) = ₹90
                        SGST Amount = ₹1,000 × (9 / 100) = ₹90*/
-                    float CGST = 0;
-                    float SGST = 0;
-                    CGST = total_subtotal * (9 / 100);
-                    SGST = total_subtotal * (9 / 100);
-                    total_cost = (total_subtotal + CGST + SGST);
-                    printf("                 Subtotal Amount          ->                       Rs. %.2f/-      Rs. %.2f/-\n\n",total_price, total_subtotal);
-                    printf("                 CGST(%%9) Amount          ->                                      Rs. %.2f/-\n\n",CGST);
-                    printf("                 SGST(%%9) Amount          ->                                      Rs. %.2f/-\n\n",SGST);
-                    printf("               Final Invoice Amount       ->                                       Rs. %.2f/-\n\n",total_subtotal);
+                    float cgst = 0;
+                    float sgst = 0;
+                    cgst = total_subtotal * (9.0 / 100.0);
+                    sgst = total_subtotal * (9.0 / 100.0);
+                    total_cost = (total_subtotal + cgst + sgst);
+                    printf("                 Subtotal Amount          ->                   Rs. %.2f/-          Rs. %.2f/-\n\n",total_price, total_subtotal);
+                    printf("                 CGST(%%9) Amount          ->                                      Rs. %.2f/-\n\n",cgst);
+                    printf("                 SGST(%%9) Amount          ->                                      Rs. %.2f/-\n\n",sgst);
+                    printf("               Final Invoice Amount       ->                                      Rs. %.2f/-\n\n",total_cost);
                 }
                 printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
                 printf("                  Thank you for visiting C-Cafe! :)                   \n");

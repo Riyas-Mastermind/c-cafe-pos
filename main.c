@@ -151,52 +151,53 @@ int main()
                 printf("Sl.No.               Name of Items            Qty         Rate        total\n");
                 
                 
-                /*if(subtotal[8] != 0) -> incorrect conition Error will be out of array rany
+                if(subtotal != 0) 
                 {
                     printf("----------------- Here is your selected order list :) -----------------\n\n ");
                     printf("Sl.No.               Name of Items            Qty         Rate        total\n");
-                    if(subtotal[0] != 0)
-                    {
-                        printf(" 1.                   Hot Coffee           %g         Rs. %.2f        %g \n", quantity[0], price[0], subtotal[0]);
-
+                        if(subtotal[0] != 0)
+                        {
+                            printf(" 1.                   Hot Coffee           %g         Rs. %.2f        %g \n", quantity[0], price[0], subtotal[0]);
+                        }
+                        
                         if(subtotal[1] != 0)
                         {
                             printf(" 2.                   Special Coffee           %g         Rs. %.2f        %g \n", quantity[1], price[1], subtotal[1]);
-
-                            if(subtotal[2] != 0)
-                            {
-                                printf(" 3.                  Cold Cream Coffee           %g         Rs. %.2f        %g \n", quantity[2], price[2], subtotal[2]);
-
-                                if(subtotal[3] != 0)
-                                {
-                                    printf(" 4.          Cold Cream Coffee with Ice Cream           %g         Rs. %.2f        %g \n", quantity[3], price[3], subtotal[3]);
-
-                                    if(subtotal[4] != 0)
-                                    {
-                                        printf(" 5.             Roohafza Milk Shake           %g         Rs. %.2f        %g \n", quantity[4], price[4], subtotal[4]);
-
-                                        if(subtotal[5] != 0)
-                                        {
-                                            printf(" 6.          Strawberry Shake with Ice Cream           %g         Rs. %.2f        %g \n", quantity[5], price[5], subtotal[5]);
-
-                                            if(subtotal[6] != 0)
-                                            {
-                                                printf(" 7.         Badam Shake with Ice Cream           %g         Rs. %.2f        %g \n", quantity[6], price[6], subtotal[6]);
-
-                                                if(subtotal[7] != 0)
-                                                {
-                                                    printf(" 8.           Chocolate Milk           %g         Rs. %.2f        %g \n", quantity[7], price[7], subtotal[7]);
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
                         }
-                    }
+                        
+                        if(subtotal[2] != 0)
+                        {
+                            printf(" 3.                  Cold Cream Coffee           %g         Rs. %.2f        %g \n", quantity[2], price[2], subtotal[2]);
+                        }
 
-                }*/ //incorrect Conition; 
-                for(int i = 0; i <= 7; i++)
+                        if(subtotal[3] != 0)
+                        {
+                            printf(" 4.          Cold Cream Coffee with Ice Cream           %g         Rs. %.2f        %g \n", quantity[3], price[3], subtotal[3]);
+                        }
+                        
+                        if(subtotal[4] != 0)
+                        {
+                            printf(" 5.             Roohafza Milk Shake           %g         Rs. %.2f        %g \n", quantity[4], price[4], subtotal[4]);
+                        }
+
+                        if(subtotal[5] != 0)
+                        {
+                            printf(" 6.          Strawberry Shake with Ice Cream           %g         Rs. %.2f        %g \n", quantity[5], price[5], subtotal[5]);
+                        }
+
+                        if(subtotal[6] != 0)
+                        {
+                            printf(" 7.         Badam Shake with Ice Cream           %g         Rs. %.2f        %g \n", quantity[6], price[6], subtotal[6]);
+                        }
+
+                        if(subtotal[7] != 0)
+                        {
+                            printf(" 8.           Chocolate Milk           %g         Rs. %.2f        %g \n", quantity[7], price[7], subtotal[7]);
+                        }
+                }
+
+
+                /*for(int i = 0; i <= 7; i++)
                 {
 
                     if(subtotal[i] != 0)
@@ -205,7 +206,8 @@ int main()
                         printf(" %d.             ",i+1)
 
                     }
-                }
+                }*/
+                
                 else
                 {
                     printf("You have not selected any items from the menu :(\n\n");

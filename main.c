@@ -50,7 +50,7 @@ int main()
                 printf("\n");
                 printf("You Selected Special Coffee -> Rs. %g/-\n\n", price[1]);
                 printf("Enter the Quantity of Special Coffee -> ");
-                if(scanf("%d", &quantity)!=1)
+                if(scanf("%f", &quantity)!=1)
                 {
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
@@ -63,7 +63,7 @@ int main()
                 printf("\n");
                 printf("You Selected Cold Cream Coffee -> Rs. %g/-\n\n", price[2]);
                 printf("Enter the Quantity of Special Coffee -> ");
-                if(scanf("%d", &quantity)!=1)
+                if(scanf("%f", &quantity)!=1)
                 {
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
@@ -76,7 +76,7 @@ int main()
                 printf("\n");
                 printf("You Selected Cold Cream Coffee with Ice Cream -> Rs. %g/-\n\n", price[3]);
                 printf("Enter the Quantity of Special Coffee -> ");
-                if(scanf("%d", &quantity)!=1)
+                if(scanf("%f", &quantity)!=1)
                 {
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
@@ -89,7 +89,7 @@ int main()
                 printf("\n");
                 printf("You Selected Roohafza Milk Shake -> Rs. %g/-\n\n", price[4]);
                 printf("Enter the Quantity of Special Coffee -> ");
-                if(scanf("%d", &quantity)!=1)
+                if(scanf("%f", &quantity)!=1)
                 {
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
@@ -102,7 +102,7 @@ int main()
                 printf("\n");
                 printf("You Selected Strawberry Shake with Ice Cream -> Rs. %g/-\n\n", price[5]);
                 printf("Enter the Quantity of Special Coffee -> ");
-                if(scanf("%d", &quantity)!=1)
+                if(scanf("%f", &quantity)!=1)
                 {
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
@@ -115,7 +115,7 @@ int main()
                 printf("\n");
                 printf("You Selected Badam Shake with Ice Cream -> Rs. %g/-\n\n", price[6]);
                 printf("Enter the Quantity of Special Coffee -> ");
-                if(scanf("%d", &quantity)!=1)
+                if(scanf("%f", &quantity)!=1)
                 {
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
@@ -128,7 +128,7 @@ int main()
                 printf("\n");
                 printf("You Selected Chocolate Milk -> Rs. %g/-\n\n", price[7]);
                 printf("Enter the Quantity of Special Coffee ->  ");
-                if(scanf("%d", &quantity)!=1)
+                if(scanf("%f", &quantity)!=1)
                 {
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;

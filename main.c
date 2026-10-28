@@ -151,7 +151,7 @@ int main()
                 if(total_cost == 0) 
                 {
                     printf("----------------- Here is your selected order list :) -----------------\n\n ");
-                    printf("Sl.No.             Name of Items                     Qty        Rate           total\n");
+                    printf("Sl.No.             Name of Items                     Qty          Rate            total\n");
                     if(subtotal[0] != 0)
                         {
                             printf(" 1.          Hot Coffee                                %g        Rs. %.2f/-       Rs. %g/- \n", quantity[0], price[0], subtotal[0]);
@@ -189,7 +189,7 @@ int main()
 
                     if(subtotal[7] != 0)
                         {
-                            printf(" 8.          Chocolate Milk                            %g        Rs. %.2f/-      Rs. %g/- \n", quantity[7], price[7], subtotal[7]);
+                            printf(" 8.          Chocolate Milk                            %g        Rs. %.2f/-       Rs. %g/- \n", quantity[7], price[7], subtotal[7]);
                         }
                     //printf("--------------------------------------------------------------------------------------------------------------------------");         
                     printf("\n\n");
@@ -213,7 +213,7 @@ int main()
                 if(temp == 1)
                 {
                     printf("----------------- Here is your confirmed order list! :) -----------------\n\n ");
-                    printf("Sl.No.             Name of Items                     Qty        Rate           total\n");
+                    printf("Sl.No.             Name of Items                     Qty          Rate            total\n");
                     if(subtotal[0] != 0)
                         {
                             printf(" 1.          Hot Coffee                                %g        Rs. %.2f/-       Rs. %g/- \n", quantity[0], price[0], subtotal[0]);
@@ -251,7 +251,7 @@ int main()
 
                     if(subtotal[7] != 0)
                         {
-                            printf(" 8.          Chocolate Milk                            %g        Rs. %.2f/-      Rs. %g/- \n", quantity[7], price[7], subtotal[7]);
+                            printf(" 8.          Chocolate Milk                            %g        Rs. %.2f/-       Rs. %g/- \n", quantity[7], price[7], subtotal[7]);
                         }
                     printf("--------------------------------------------------------------------------------------------------------------------------\n\n");         
                     float total_subtotal = 0;
@@ -266,10 +266,10 @@ int main()
                     CGST = total_subtotal * (9 / 100);
                     SGST = total_subtotal * (9 / 100);
                     total_cost = (total_subtotal + CGST + SGST);
-                    printf("                 Subtotal Amount          ->            Rs. %.2f/-      Rs. %.2f/-\n\n",total_price, total_subtotal);
-                    printf("                 CGST(%%9) Amount         ->                            Rs. %.2f/-\n\n",CGST);
-                    printf("                 SGST(%%9) Amount         ->                            Rs. %.2f/-\n\n",SGST);
-                    printf("               Final Invoice Amount       ->                            Rs. %.2f/-\n\n",total_subtotal);
+                    printf("                 Subtotal Amount          ->                       Rs. %.2f/-      Rs. %.2f/-\n\n",total_price, total_subtotal);
+                    printf("                 CGST(%%9) Amount          ->                                      Rs. %.2f/-\n\n",CGST);
+                    printf("                 SGST(%%9) Amount          ->                                      Rs. %.2f/-\n\n",SGST);
+                    printf("               Final Invoice Amount       ->                                       Rs. %.2f/-\n\n",total_subtotal);
                 }
                 printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
                 printf("                  Thank you for visiting C-Cafe! :)                   \n");

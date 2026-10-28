@@ -37,12 +37,12 @@ int main()
                 printf("\n");
                 printf("You Selected Hot Coffee -> Rs. %g/-\n\n", price[0]);
                 printf("Enter the Quantity of Hot Coffee -> ");
-                if(scanf("%d", &quantity)!=1)
+                if(scanf("%f", &quantity)!=1)
                 {
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
-                subtotal[0] = (float)quantity * price[0];
+                subtotal[0] = quantity * price[0];
                 printf("\nSubtotal for Hot Coffee -> Rs. %g/-\n\n",subtotal[0]);
                 break;
             case 2:
@@ -55,7 +55,7 @@ int main()
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
-                subtotal[1] = (float)quantity * price[1];
+                subtotal[1] = quantity * price[1];
                 printf("\nSubtotal for Special Coffee -> Rs. %g/-\n\n",subtotal[1]);
                 break;
             case 3:
@@ -68,7 +68,7 @@ int main()
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
-                subtotal[2] = (float)quantity * price[2];
+                subtotal[2] = quantity * price[2];
                 printf("\nSubtotal for Cold Cream Coffee -> Rs. %g/-\n\n",subtotal[2]);
                 break;
             case 4:
@@ -81,7 +81,7 @@ int main()
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
-                subtotal[3] = (float)quantity * price[3];
+                subtotal[3] = quantity * price[3];
                 printf("\nSubtotal for Cold Cream Coffee with Ice Cream -> Rs. %g/-\n\n",subtotal[3]);
                 break;
             case 5:
@@ -94,7 +94,7 @@ int main()
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
-                subtotal[4] = (float)quantity * price[4];
+                subtotal[4] = quantity * price[4];
                 printf("\nSubtotal for Roohafza Milk Shake -> Rs. %g/-\n\n",subtotal[4]);
                 break;
             case 6:
@@ -107,7 +107,7 @@ int main()
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
-                subtotal[5] = (float)quantity * price[5];
+                subtotal[5] = quantity * price[5];
                 printf("\nSubtotal for Strawberry Shake with Ice Cream -> Rs. %g/-\n\n",subtotal[5]);
                 break;
             case 7:
@@ -120,7 +120,7 @@ int main()
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
-                subtotal[6] = (float)quantity * price[6];
+                subtotal[6] = quantity * price[6];
                 printf("\nSubtotal for Badam Shake with Ice Cream -> Rs. %g/-\n\n",subtotal[6]);
                 break;
             case 8:
@@ -133,7 +133,7 @@ int main()
                     printf("Error: Please Enter only Quantity number.\n");
                     return -2;
                 }
-                subtotal[7] = (float)quantity * price[7];
+                subtotal[7] = quantity * price[7];
                 printf("\nSubtotal for Chocolate Milk -> Rs. %g/-\n\n",subtotal[7]);
                 break;
             case 0:

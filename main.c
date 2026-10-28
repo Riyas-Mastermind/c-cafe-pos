@@ -151,7 +151,7 @@ int main()
                 printf("Sl.No.               Name of Items            Qty         Rate        total\n");
                 
                 
-                if(subtotal != 0) 
+                if(total_cost == 0) 
                 {
                     printf("----------------- Here is your selected order list :) -----------------\n\n ");
                     printf("Sl.No.               Name of Items            Qty         Rate        total\n");
@@ -207,7 +207,7 @@ int main()
 
                     }
                 }*/
-                
+
                 else
                 {
                     printf("You have not selected any items from the menu :(\n\n");

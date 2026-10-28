@@ -147,8 +147,11 @@ int main()
             case 0:
                 printf("\n");
                 printf("Order Summary for selected items.\n\n");
+                printf("----------------- Here is your selected order list :) -----------------\n\n ");
+                printf("Sl.No.               Name of Items            Qty         Rate        total\n");
                 
-                if(subtotal[8] != 0)
+                
+                /*if(subtotal[8] != 0) -> incorrect conition Error will be out of array rany
                 {
                     printf("----------------- Here is your selected order list :) -----------------\n\n ");
                     printf("Sl.No.               Name of Items            Qty         Rate        total\n");
@@ -192,6 +195,16 @@ int main()
                         }
                     }
 
+                }*/ //incorrect Conition; 
+                for(int i = 0; i <= 7; i++)
+                {
+
+                    if(subtotal[i] != 0)
+                    {   
+
+                        printf(" %d.             ",i+1)
+
+                    }
                 }
                 else
                 {
